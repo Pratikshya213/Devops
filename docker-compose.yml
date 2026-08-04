@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  gocart-web:
+    build: .
+    container_name: gocart-web
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
